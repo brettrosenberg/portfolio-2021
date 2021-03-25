@@ -1,0 +1,276 @@
+
+body{
+	background-image: url(../imgs/pexels-photo-747964.jpg);
+	background-repeat: repeat;
+
+}
+
+
+/*Make the h1 heading bigger with a bold font*/
+h1{
+	font-size: 3em; 
+	font-weight: bold;
+	color: rgba(114, 100, 235, 0.404);
+	text-align: center;
+	text-decoration: underline;
+	
+}
+
+/*Style the images*/
+img{
+    height: 300px;
+    width: auto;
+    margin: 10px;
+}
+
+/*Make the h2 heading match h1*/
+h2{
+	font-size: 2em; 
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/*Improve the spacing for paragraphs AND headings*/
+p, h1, h2 {
+    padding: 5px;
+}
+
+/*Add borders around the main components and some
+space too*/
+ head, nav, main, h1, h2, footer{
+	margin: 5px 0;
+	color: rgba(255, 255, 255, 0.849);
+}
+
+
+/*Change the styling for all of the list 
+items in the nav section*/
+nav li{
+	padding-right: 10px;
+	display: inline;
+
+}
+
+nav {
+	
+	padding: 50px 0;
+	text-align: left;
+}
+
+nav a{
+	color: rgba(255, 255, 255, 0.849);;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+nav .current{
+	text-decoration: underline;
+	color: blue;
+}
+
+.skip a{
+	background: white;
+	left: 0;
+	padding: 7px;
+	-webkit-transition: top 1s ease-out;
+	transition: top 1s ease-out;
+	z-index: 1;
+	top: -50px;
+	position: absolute;
+}
+
+.skip a:focus{
+	position:absolute;
+	top: 10px;
+  }
+
+footer{
+	background-color: white;
+	color: black;
+	text-align: center;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 1fr 3fr 3fr 1fr;
+	grid-template-rows: auto;
+	grid-row-gap: 10px;
+}
+
+.coral{
+	grid-column: 1/-1;
+	grid-row: 1/2;
+}
+
+.coral-image{
+	grid-column: 1/-1;
+	grid-row: 2/3;
+	max-height: 650px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.help{
+	grid-column: 1/-1;
+	grid-row: 3/4;
+}
+
+.help-image{
+	grid-column: 1/-1;
+	grid-row: 4/5;
+	max-height: 650px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.text{
+	background-color:teal(255, 255, 255, 0.5);
+	border: 5px solid white;
+	padding: 30px;
+	align-self: center;
+
+}
+
+@media all and (min-width: 880px){
+.container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.coral{
+	grid-column: 1 / span 3;
+	grid-row: 1 / span 2;
+}
+
+.coral-image{
+	grid-column: 4 / span 1;
+	grid-row: 1 / span 2;
+}
+
+.help{
+	grid-column: 2 / span 3;
+	grid-row: 3 / span 2;
+}
+
+.help-image{
+	grid-column: 1 / span 1;
+	grid-row: 3 / span 2;
+
+}
+
+.wall{
+	display: grid;
+	grid-template-columns: 1fr 3fr 3fr 1fr;
+	grid-template-rows: auto;
+	grid-row-gap: 10px;
+}
+
+.vacations{
+	grid-column: 1/-1;
+	grid-row: 1/2;
+}
+
+.vacations-image{
+	grid-column: 1/-1;
+	grid-row: 2/3;
+	max-height: 650px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.crazy{
+	grid-column: 1/-1;
+	grid-row: 3/4;
+}
+
+.crazy-image{
+	grid-column: 1/-1;
+	grid-row: 4/5;
+	max-height: 650px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.basket{
+	display: grid;
+	grid-template-columns: 1fr 3fr 3fr 1fr;
+	grid-template-rows: auto;
+	grid-row-gap: 10px;
+}
+
+.family{
+	grid-column: 1/-1;
+	grid-row: 1/2;
+}
+
+.family-images{
+	grid-column: 1/-1;
+	grid-row: 2/3;
+	max-height: 650px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.extended{
+	grid-column: 1/-1;
+	grid-row: 3/4;
+}
+
+.extended-images{
+	grid-column: 1/-1;
+	grid-row: 2/3;
+	max-height: 650px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.north{
+	display: grid;
+	grid-template-columns: 1fr 3fr 3fr 1fr;
+	grid-template-rows: auto;
+	grid-row-gap: 10px;
+
+}
+
+.michigan-fball{
+	grid-column: 1/-1;
+	grid-row: 1/2;
+}
+
+.michigan-fballimages{
+	grid-column: 1/-1;
+	grid-row: 2/3;
+	max-height: 650px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.michigan-bball{
+	grid-column: 1/-1;
+	grid-row: 1/2;
+}
+
+.michigan-ballimages{
+	grid-column: 1/-1;
+	grid-row: 2/3;
+	max-height: 650px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
