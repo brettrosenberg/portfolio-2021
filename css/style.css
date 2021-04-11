@@ -1,7 +1,10 @@
 
 body{
 	background-image: url(../imgs/pexels-photo-747964.jpg);
-	background-repeat: repeat;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: lighten;
 
 }
 
@@ -10,7 +13,7 @@ body{
 h1{
 	font-size: 3em; 
 	font-weight: bold;
-	color: rgba(114, 100, 235, 0.404);
+	color: rgba(0, 0, 0, 0.404);
 	text-align: center;
 	text-decoration: underline;
 	
@@ -37,7 +40,7 @@ p, h1, h2 {
 
 /*Add borders around the main components and some
 space too*/
- head, nav, main, h1, h2, footer{
+ head, nav, main,footer{
 	margin: 5px 0;
 	color: rgba(255, 255, 255, 0.849);
 }
@@ -134,14 +137,13 @@ footer{
 }
 
 .text{
-	background-color:teal(255, 255, 255, 0.5);
-	border: 5px solid white;
+	background-color: none;
+	border: 6px solid white;
 	padding: 30px;
 	align-self: center;
-
 }
 
-@media all and (min-width: 880px){
+@media all and (min-width: 1000px){
 .container{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -169,108 +171,86 @@ footer{
 
 }
 
+
 .wall{
-	display: grid;
-	grid-template-columns: 1fr 3fr 3fr 1fr;
-	grid-template-rows: auto;
-	grid-row-gap: 10px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
 }
 
 .vacations{
-	grid-column: 1/-1;
-	grid-row: 1/2;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .vacations-image{
-	grid-column: 1/-1;
-	grid-row: 2/3;
-	max-height: 650px;
-	overflow: hidden;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .crazy{
-	grid-column: 1/-1;
-	grid-row: 3/4;
+	margin-left: center;
+	margin-right: auto;
 }
 
 .crazy-image{
-	grid-column: 1/-1;
-	grid-row: 4/5;
-	max-height: 650px;
-	overflow: hidden;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .basket{
-	display: grid;
-	grid-template-columns: 1fr 3fr 3fr 1fr;
-	grid-template-rows: auto;
-	grid-row-gap: 10px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
 }
 
+
 .family{
-	grid-column: 1/-1;
-	grid-row: 1/2;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .family-images{
-	grid-column: 1/-1;
-	grid-row: 2/3;
-	max-height: 650px;
-	overflow: hidden;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .extended{
-	grid-column: 1/-1;
-	grid-row: 3/4;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .extended-images{
-	grid-column: 1/-1;
-	grid-row: 2/3;
-	max-height: 650px;
-	overflow: hidden;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .north{
-	display: grid;
-	grid-template-columns: 1fr 3fr 3fr 1fr;
-	grid-template-rows: auto;
-	grid-row-gap: 10px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
 
 }
 
 .michigan-fball{
-	grid-column: 1/-1;
-	grid-row: 1/2;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .michigan-fballimages{
-	grid-column: 1/-1;
-	grid-row: 2/3;
-	max-height: 650px;
-	overflow: hidden;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .michigan-bball{
-	grid-column: 1/-1;
-	grid-row: 1/2;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .michigan-ballimages{
-	grid-column: 1/-1;
-	grid-row: 2/3;
-	max-height: 650px;
-	overflow: hidden;
 	margin-left: auto;
 	margin-right: auto;
 }
