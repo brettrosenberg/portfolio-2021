@@ -150,6 +150,14 @@ footer{
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
+@media all and (min-width: 1200px){
+.container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
 .coral{
 	grid-column: 1 / span 3;
 	grid-row: 1 / span 2;
@@ -195,7 +203,7 @@ footer{
 }
 
 .crazy-image{
-	margin-left: auto;
+	margin-left: left;
 	margin-right: auto;
 }
 
